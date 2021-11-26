@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MostrarDetallesCursoActivity">
+
+    <ImageView
+        android:id="@+id/img_detalle_ciudad"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="76dp"
+        android:contentDescription="imagen detalle ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/curso" />
+
+    <TextView
+        android:id="@+id/txt_detalle_nombrec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:text="nombre curso"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_detalle_ciudad" />
+
+    <TextView
+        android:id="@+id/txt_detalle_descripcionc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Descripcion curso"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detalle_nombrec"
+        app:layout_constraintStart_toStartOf="@+id/txt_detalle_nombrec"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detalle_nombrec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

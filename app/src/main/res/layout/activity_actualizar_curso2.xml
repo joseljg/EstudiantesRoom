@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Actualizar_curso_Activity2">
+
+
+    <TextView
+        android:id="@+id/txt_actualizar_nombrec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="descripcion curso"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_actualizar_descripcionc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_actualizar_descripcionc"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/txt_actualizar_curso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Actualizar curso"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_actualizar_curso"
+        android:layout_width="223dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="idcurso"
+        android:ems="10"
+        android:hint="Nombre curso"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_actualizar_curso2" />
+
+    <EditText
+        android:id="@+id/edt_actualizar_descripcionc"
+        android:layout_width="230dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="actualizarprovincia"
+        android:ems="10"
+        android:hint="descripcion...."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edt_actualizar_curso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_actualizar_curso"
+        app:layout_constraintTop_toBottomOf="@+id/edt_actualizar_curso" />
+
+    <Button
+        android:id="@+id/bt_actualizarc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Actualizar Curso"
+        android:onClick="actualizarCurso2"
+        app:layout_constraintEnd_toEndOf="@+id/edt_actualizar_descripcionc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_actualizar_descripcionc"
+        app:layout_constraintTop_toBottomOf="@+id/edt_actualizar_descripcionc" />
+
+    <TextView
+        android:id="@+id/txt_actualizar_idp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="nombre curso"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_actualizar_curso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_actualizar_curso"
+        app:layout_constraintVertical_bias="0.47" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
